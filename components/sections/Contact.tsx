@@ -10,7 +10,6 @@ import {
   HiOutlineDocumentText,
   HiOutlineEnvelope,
 } from "react-icons/hi2";
-import ContactForm from "@/components/ContactForm";
 import { site } from "@/lib/site";
 
 const LINKS: { label: string; value: string; href: string; icon: IconType }[] = [
@@ -95,50 +94,69 @@ export default function Contact() {
         </h2>
 
         <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
-          {/* Pitch + direct links */}
-          <div className="lg:col-span-5">
-            <p className="text-lg leading-relaxed text-neutral-400">
+          {/* Pitch + email */}
+          <div className="lg:col-span-6">
+            <p className="max-w-lg text-lg leading-relaxed text-neutral-400">
               Have a product to build, or a team that needs an engineer who can own work from
-              idea to launch? I&apos;m open to new roles and projects. Send a message and
-              I&apos;ll get back to you.
+              idea to launch? I&apos;m open to new roles and projects, and happy to talk through
+              what you have in mind.
             </p>
 
-            <ul className="mt-10 border-t border-white/10">
-              {LINKS.map(({ label, value, href, icon: Icon }) => {
-                const external = href.startsWith("http") || href.endsWith(".pdf");
-                return (
-                  <li key={label} className="border-b border-white/10">
-                    <a
-                      href={href}
-                      target={external ? "_blank" : undefined}
-                      rel={external ? "noopener noreferrer" : undefined}
-                      className="group flex items-center gap-4 py-5"
-                    >
-                      <span className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl border border-white/10 bg-white/[0.03] text-neutral-400 transition-colors duration-300 group-hover:border-accent/40 group-hover:text-accent">
-                        <Icon className="h-5 w-5" />
-                      </span>
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-xs font-medium tracking-widest text-neutral-500 uppercase">
-                          {label}
-                        </span>
-                        <span className="mt-0.5 block truncate font-medium text-white">{value}</span>
-                      </span>
-                      <HiArrowUpRight className="h-5 w-5 shrink-0 text-neutral-500 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" />
-                    </a>
-                  </li>
-                );
-              })}
-            </ul>
-
-            <div className="mt-8">
-              <CopyEmail />
+            <div className="mt-10 rounded-3xl border border-white/10 bg-white/[0.02] p-6 sm:p-8">
+              <p className="flex items-center gap-2 text-xs font-medium tracking-widest text-neutral-500 uppercase">
+                {site.available && (
+                  <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
+                )}
+                {site.available ? "Available for work" : "Get in touch"}
+              </p>
+              <a
+                href={`mailto:${site.email}`}
+                className="mt-4 block text-xl font-medium tracking-tight break-all text-white transition-colors hover:text-accent sm:text-2xl"
+              >
+                {site.email}
+              </a>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a
+                  href={`mailto:${site.email}`}
+                  className="group flex h-12 items-center gap-2 rounded-full bg-accent px-7 text-base font-semibold text-neutral-950 transition-colors hover:bg-accent/85"
+                >
+                  Send an email
+                  <HiArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                </a>
+                <CopyEmail />
+              </div>
             </div>
           </div>
 
-          {/* Form */}
-          <div className="lg:col-span-7">
-            <ContactForm />
-          </div>
+          {/* Contact list */}
+          <ul className="border-t border-white/10 lg:col-span-6">
+            {LINKS.map(({ label, value, href, icon: Icon }) => {
+              const external = href.startsWith("http") || href.endsWith(".pdf");
+              return (
+                <li key={label} className="border-b border-white/10">
+                  <a
+                    href={href}
+                    target={external ? "_blank" : undefined}
+                    rel={external ? "noopener noreferrer" : undefined}
+                    className="group flex items-center gap-5 py-6 transition-colors"
+                  >
+                    <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl border border-white/10 bg-white/[0.03] text-neutral-400 transition-colors duration-300 group-hover:border-accent/40 group-hover:text-accent">
+                      <Icon className="h-5 w-5" />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-xs font-medium tracking-widest text-neutral-500 uppercase">
+                        {label}
+                      </span>
+                      <span className="mt-1 block truncate text-lg font-medium text-white">
+                        {value}
+                      </span>
+                    </span>
+                    <HiArrowUpRight className="h-5 w-5 shrink-0 text-neutral-500 transition-all duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:text-accent" />
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </div>
     </section>
