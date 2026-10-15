@@ -8,15 +8,13 @@ import {
   HiCheck,
   HiOutlineClipboard,
   HiOutlineDocumentText,
-  HiOutlineEnvelope,
 } from "react-icons/hi2";
 import { site } from "@/lib/site";
 
 const LINKS: { label: string; value: string; href: string; icon: IconType }[] = [
-  { label: "Email", value: site.email, href: `mailto:${site.email}`, icon: HiOutlineEnvelope },
   {
     label: "LinkedIn",
-    value: "akinfenwa-taiwo-christopher",
+    value: site.fullName,
     href: site.linkedin,
     icon: FaLinkedinIn,
   },
@@ -51,7 +49,7 @@ function CopyEmail() {
       type="button"
       onClick={copy}
       aria-live="polite"
-      className={`flex h-12 items-center gap-2 rounded-full border px-6 text-base font-semibold transition-colors ${
+      className={`flex h-11 items-center justify-center gap-2 rounded-full border px-4 text-sm font-semibold whitespace-nowrap transition-colors sm:h-12 sm:px-6 sm:text-base ${
         copied
           ? "border-accent/40 bg-accent/10 text-accent"
           : "border-white/15 text-white hover:border-white/30 hover:bg-white/5"
@@ -93,9 +91,9 @@ export default function Contact() {
           />
         </h2>
 
-        <div className="mt-14 grid gap-12 lg:grid-cols-12 lg:gap-16">
+        <div className="mt-14 grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-12 xl:gap-16">
           {/* Pitch + email */}
-          <div className="lg:col-span-6">
+          <div className="min-w-0 lg:col-span-7 xl:col-span-6">
             <p className="max-w-lg text-lg leading-relaxed text-neutral-400">
               Have a product to build, or a team that needs an engineer who can own work from
               idea to launch? I&apos;m open to new roles and projects, and happy to talk through
@@ -111,16 +109,17 @@ export default function Contact() {
               </p>
               <a
                 href={`mailto:${site.email}`}
-                className="mt-4 block text-xl font-medium tracking-tight break-all text-white transition-colors hover:text-accent sm:text-2xl"
+                className="mt-4 block text-base font-medium tracking-tight break-all text-white transition-colors hover:text-accent min-[400px]:text-lg sm:text-2xl"
               >
                 {site.email}
               </a>
-              <div className="mt-8 flex flex-wrap gap-3">
+              <div className="mt-8 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap sm:gap-3">
                 <a
                   href={`mailto:${site.email}`}
-                  className="group flex h-12 items-center gap-2 rounded-full bg-accent px-7 text-base font-semibold text-neutral-950 transition-colors hover:bg-accent/85"
+                  className="group flex h-11 items-center justify-center gap-2 rounded-full bg-accent px-4 text-sm font-semibold whitespace-nowrap text-neutral-950 transition-colors hover:bg-accent/85 sm:h-12 sm:px-7 sm:text-base"
                 >
-                  Send an email
+                  <span className="sm:hidden">Email me</span>
+                  <span className="hidden sm:inline">Send an email</span>
                   <HiArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                 </a>
                 <CopyEmail />
@@ -129,7 +128,7 @@ export default function Contact() {
           </div>
 
           {/* Contact list */}
-          <ul className="border-t border-white/10 lg:col-span-6">
+          <ul className="min-w-0 border-t border-white/10 lg:col-span-5 xl:col-span-6">
             {LINKS.map(({ label, value, href, icon: Icon }) => {
               const external = href.startsWith("http") || href.endsWith(".pdf");
               return (
@@ -138,7 +137,7 @@ export default function Contact() {
                     href={href}
                     target={external ? "_blank" : undefined}
                     rel={external ? "noopener noreferrer" : undefined}
-                    className="group flex items-center gap-5 py-6 transition-colors"
+                    className="group flex items-center gap-4 py-5 transition-colors sm:gap-5 sm:py-6"
                   >
                     <span className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl border border-white/10 bg-white/[0.03] text-neutral-400 transition-colors duration-300 group-hover:border-accent/40 group-hover:text-accent">
                       <Icon className="h-5 w-5" />
@@ -147,7 +146,7 @@ export default function Contact() {
                       <span className="block text-xs font-medium tracking-widest text-neutral-500 uppercase">
                         {label}
                       </span>
-                      <span className="mt-1 block truncate text-lg font-medium text-white">
+                      <span className="mt-1 block text-base font-medium break-words text-white sm:text-lg lg:text-base xl:text-lg">
                         {value}
                       </span>
                     </span>

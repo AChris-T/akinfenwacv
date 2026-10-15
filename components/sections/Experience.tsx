@@ -50,7 +50,7 @@ export default function Experience() {
           {roles.map((role) => (
             <li
               key={`${role.company}-${role.period}`}
-              className="relative grid gap-6 pb-16 pl-10 last:pb-0 lg:grid-cols-4 lg:gap-12 lg:pl-0"
+              className="relative grid grid-cols-1 gap-6 pb-16 pl-10 last:pb-0 lg:grid-cols-4 lg:gap-12 lg:pl-0"
             >
               {/* Dot on the rail */}
               <span

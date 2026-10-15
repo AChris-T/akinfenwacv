@@ -153,7 +153,7 @@ export default function Projects() {
           id="projects-grid"
           role="tabpanel"
           key={active}
-          className="mt-10 grid gap-x-8 gap-y-14 md:grid-cols-2"
+          className="mt-10 grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2"
         >
           {visible.map((project, i) => (
             // Stagger restarts per batch so newly loaded cards animate in together.

@@ -146,10 +146,10 @@ export default function Hero() {
             <RotatingWord />
           </p>
 
-          <div className="animate-fade-up flex flex-wrap items-center gap-3" style={delay(300)}>
+          <div className="animate-fade-up flex flex-wrap items-center gap-2 sm:gap-3" style={delay(300)}>
             <a
               href="#projects"
-              className="group flex h-12 items-center gap-2 rounded-full bg-accent px-7 text-base font-semibold text-neutral-950 transition-colors hover:bg-accent/85"
+              className="group flex h-11 shrink-0 items-center gap-2 rounded-full bg-accent px-5 text-sm font-semibold whitespace-nowrap text-neutral-950 transition-colors hover:bg-accent/85 sm:h-12 sm:px-7 sm:text-base"
             >
               View my work
               <HiArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -161,7 +161,7 @@ export default function Hero() {
                 aria-label={label}
                 target={href.startsWith("http") ? "_blank" : undefined}
                 rel="noopener noreferrer"
-                className="grid h-12 w-12 place-items-center rounded-2xl border border-white/10 bg-white/[0.03] text-neutral-400 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/40 hover:text-accent"
+                className="grid h-11 w-11 shrink-0 place-items-center rounded-2xl border border-white/10 bg-white/[0.03] text-neutral-400 transition-all duration-300 hover:-translate-y-0.5 hover:border-accent/40 hover:text-accent sm:h-12 sm:w-12"
               >
                 <Icon className="h-5 w-5" />
               </a>
