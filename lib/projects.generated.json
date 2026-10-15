@@ -1,0 +1,116 @@
+{
+  "nextjs-org": {
+    "title": "Next.js by Vercel - The React Framework",
+    "description": "Next.js by Vercel is the full-stack React framework for the web.",
+    "width": 1440,
+    "height": 6313
+  },
+  "tailwindcss-com": {
+    "title": "Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.",
+    "description": "Tailwind CSS is a utility-first CSS framework for rapidly building modern websites without ever leaving your HTML.",
+    "width": 1440,
+    "height": 8000
+  },
+  "expo-dev": {
+    "title": "Expo — Build native apps with React",
+    "description": "Expo is the fastest way to build native apps for iOS, Android, and the web with React.",
+    "width": 1440,
+    "height": 8000
+  },
+  "react-dev": {
+    "title": "React",
+    "description": "React is the library for web and native user interfaces. Build user interfaces out of individual pieces called components written in JavaScript. React is designed to let you seamlessly combine components written by independent people, teams, and organizations.",
+    "width": 1440,
+    "height": 8000
+  },
+  "app-meetviro-com-signin": {
+    "title": "Viro | Sign in",
+    "description": "Sign in to your Viro account",
+    "width": 1440,
+    "height": 900
+  },
+  "fojoglobal-co-uk": {
+    "title": "FOJO - Followers of Jesus Only",
+    "description": "At FOJO, we are a community of believers passionately committed to walking in the footsteps of Jesus Christ—nothing more, nothing less. In a world full of compromise and distraction, FOJO stands as a bold call back to authentic discipleship: living out the teachings of Christ with unwavering truth and fearless faith.",
+    "width": 1440,
+    "height": 4352
+  },
+  "everlastinghills-church": {
+    "title": "Everlasting Hills Church",
+    "description": "A church family in Ibadan, Nigeria. Join us Sunday for service.",
+    "width": 1440,
+    "height": 8000
+  },
+  "viridisgreen-co-uk": {
+    "title": "Viridis Green",
+    "description": "At Viridis Green, we combine expertise in bid writing, sustainable practices, commodity management, and technology delivery to help UK businesses thrive in today’s competitive landscape.",
+    "width": 1440,
+    "height": 4191
+  },
+  "meetviro-com": {
+    "title": "Viro | The AI Revenue system that does the work for you",
+    "description": "Viro follows up, updates your records, and moves every deal forward, automatically, before, during, and after every meeting.",
+    "width": 1440,
+    "height": 8000
+  },
+  "lushcorporate-co-uk": {
+    "title": "Lush",
+    "description": "Yemi Osinubi is a qualified Regulatory Risk and Compliance expert, Corporate training facilitator and a certified member of CISI with over a decade of experience. Her expertise spans Corporate governance, Regulatory Compliance and Professional developmen",
+    "width": 1440,
+    "height": 3881
+  },
+  "coterieexperience-co-uk": {
+    "title": "Coterie Experience | Research-Led Events & Experience Consulting",
+    "description": "Coterie Experience is a research-led event and consulting studio designing corporate, cultural, and community experiences that feel as good as they perform. Grounded in academic insight, delivered with care.",
+    "width": 1440,
+    "height": 8000
+  },
+  "kqacademy-ng": {
+    "title": "Knowledge Quotient Academy",
+    "description": "We are dedicated to shaping bright minds through quality education, personalized tutoring, and hands-on tech training. Whether you’re a young learner, a student, or a professional seeking to advance your skills — we’ve got you covered.",
+    "width": 1440,
+    "height": 3915
+  },
+  "superoagrobase-com": {
+    "title": "Buy Quality Agricultural Products in Nigeria",
+    "description": "Shop 1000+ quality agricultural products: seeds, fertilizers, farm equipment, pesticides, herbicides & more. Fast nationwide delivery. Trusted by 10,000+ farmers.",
+    "width": 1440,
+    "height": 8000
+  },
+  "ayodejianifowose-com-home": {
+    "title": "Ayodeji Anifowose | Lead Pastor, RCCG, Arise Church.",
+    "description": "Ayodeji Anifowose is an author, content creator, training facilitator, certified Life/ Marriage coach and Pastor. He holds a bachelor's degree in Economics and is also a young minister of God, determined to continually groom world changers and teach people the undiluted word of God. As a content creator and marriage counselor, he runs a YouTube channel called Great Father, Great Husband.Though he has been in ministry for many years, he accepted God’s call as the Lead Pastor at RCCG, Arise Church, Riverside, California in 2022. As part of his calling, gifting and experience, he's using every opportunity given to open the eyes of the body of Christ. In this current digital age, one of his goals is to maximize social media to propagate the gospel of Jesus Christ. He has a special calling to groom boys into becoming the men God has called them to be. He loves people and is enthusiastic about making an impact in the lives of everyone he meets. Ayodeji Anifowose is also a songwriter and has released three songs as a blessing to the world. The songs are available on all digital platforms. He's blessed with a wonderful wife, Opeyemi and three lovely daughters Esther, Ayomide and Imole.",
+    "width": 1440,
+    "height": 4711
+  },
+  "omojolagbegeriaticcare-org": {
+    "title": "Home | Omojolagbe Geriatric Care Foundation",
+    "description": "Omojolagbe Geriatric Care Foundation is a reputable organization working in the way of creating healthier, happier and fruitful life for the aged. We have impacted the lives of over 1000 elderly people in Ibadan and Nigeria in general",
+    "width": 1440,
+    "height": 8000
+  },
+  "petigrity-com": {
+    "title": "Home | Petigrity",
+    "description": "We are dedicated to helping you find the best health plan for your specific needs, either as an individual, a business or an organization, Petigrity has got you covered",
+    "width": 1440,
+    "height": 6339
+  },
+  "vaultlyadmin-vercel-app-login": {
+    "title": "Log in | Vaultly Admin",
+    "description": "Vaultly admin console",
+    "width": 1440,
+    "height": 900
+  },
+  "sparkpay-ng": {
+    "title": "SparkPay – Pay Globally. Live Freely.",
+    "description": "SparkPay is your all-in-one fintech app for global payments, NGN wallets, USD virtual cards, gift cards, and instant transfers.",
+    "width": 1440,
+    "height": 7130
+  },
+  "osmosiscoaching-org": {
+    "title": "Osmosis | Home",
+    "description": "Osmosis",
+    "width": 1440,
+    "height": 7068
+  }
+}

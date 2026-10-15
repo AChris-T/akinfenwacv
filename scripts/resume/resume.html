@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>AKINFENWA Taiwo Christopher CV</title>
+<style>
+  @page { size: Letter; margin: 0.6in 0.7in 0.6in; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body {
+    margin: 0;
+    font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
+    font-size: 10.5pt;
+    line-height: 1.38;
+    color: #000;
+  }
+  a { color: #0563c1; text-decoration: underline; }
+
+  /* Header */
+  h1 { margin: 0; text-align: center; font-size: 26pt; font-weight: 700; line-height: 1.1; }
+  .contact {
+    margin-top: 4px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #4472c4;
+    text-align: center;
+    font-size: 8.5pt;
+    font-weight: 700;
+  }
+  .contact span { margin: 0 6px; white-space: nowrap; }
+  .title { margin: 14px 0 0; text-align: center; font-size: 15pt; font-weight: 700; color: #2f5496; }
+  .title i { font-size: 10.5pt; font-weight: 600; color: #1f3864; }
+
+  /* Sections */
+  h2 {
+    margin: 13px 0 8px;
+    padding: 5px 0 5px 10px;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    font-size: 13pt;
+    font-weight: 700;
+    color: #1f3864;
+  }
+  .summary {
+    margin: 10px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid #bfbfbf;
+    text-align: justify;
+    line-height: 1.6;
+  }
+
+  /* Jobs */
+  .job { margin-top: 12px; }
+  .row { display: flex; justify-content: space-between; align-items: baseline; font-weight: 700; }
+  .row .dates { font-size: 9.5pt; }
+  .bold { font-weight: 700; margin: 1px 0; }
+  .role { font-weight: 700; font-size: 11pt; margin: 4px 0 0; }
+  .project { margin: 8px 0 0; }
+  .project b { font-weight: 700; }
+  ul { margin: 4px 0 0; padding-left: 38px; }
+  li { margin: 2px 0; text-align: justify; }
+  .job-head, .project { break-after: avoid-page; }
+  li { break-inside: avoid-page; }
+
+  /* Skills */
+  .skills p { margin: 0 0 5px; padding-left: 10px; }
+  .block { padding-left: 10px; margin: 0; }
+  .plain { margin: 0; padding-left: 28px; }
+  .keep { break-inside: avoid-page; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>AKINFENWA Taiwo Christopher</h1>
+  <div class="contact">
+    <span>Email: <a href="mailto:taiwoakinfenwa2019@gmail.com">taiwoakinfenwa2019@gmail.com</a></span>
+    <span>LinkedIn: <a href="https://www.linkedin.com/in/akinfenwa-taiwo-christopher/">linkedin.com/in/akinfenwa-taiwo-christopher</a></span>
+    <span>GitHub: <a href="https://github.com/AChris-T">github.com/AChris-T</a></span>
+  </div>
+  <p class="title">Full-Stack &amp; Mobile Engineer <i>_ Leveraging on 5+ years' Experience</i></p>
+</header>
+
+<p class="summary">
+  Full-stack and mobile engineer with 5+ years building production web, backend and mobile applications.
+  Core strength in React and Next.js frontend architecture, extended by hands-on backend development (NestJS,
+  Prisma, PostgreSQL, Redis and queue-based workflows) and mobile app delivery (React Native and Expo with
+  identity verification and banking integrations). Comfortable taking a product from idea to launch on my own
+  or as part of a team, working closely with product, design and backend colleagues. Experienced with secure
+  authentication, role-based access control, typed API contracts and modernizing legacy codebases, including
+  jQuery. I use AI-assisted tools (GitHub Copilot, Claude, Cursor) to move faster, and I review, test and harden
+  everything before it reaches production.
+</p>
+
+<h2>Work Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <div class="row"><span>Viro</span><span class="dates">November 2025 - Present</span></div>
+    <p class="bold">United Kingdom (Remote)</p>
+    <p class="role">Frontend Developer.</p>
+  </div>
+  <ul>
+    <li>Replaced a simulated chat screen that only gave pre-written replies with a production AI assistant that streams answers live, built on RTK Query, including a new typed endpoint that finds the right conversation thread for each meeting.</li>
+    <li>Broke a 150-line chat component into small, single-purpose hooks and components (sending messages, file attachments, message list, composer), making the feature easier to maintain and test.</li>
+    <li>Built file attachment uploads with per-file progress, retry and removal, and added streaming replies with a live "thinking" indicator, inline citations and error recovery.</li>
+    <li>Fixed a bug that left duplicate messages in the chat when a failed message was retried.</li>
+    <li>Designed and built an approval workflow (Accept / Edit / Reject) for tasks the AI creates from meetings, with a two-lane view that separates new tasks from those awaiting confirmation.</li>
+    <li>Built a shared task-action system reused across features, and centralized shared display logic (color-coding, formatting helpers) to remove duplicate code.</li>
+    <li>Set up type-safe request and response contracts across RTK Query endpoints, and scaffolded a new AI Activities tab in the meeting detail view for upcoming features.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <div class="row"><span>Independent Full-Stack &amp; Mobile Projects</span><span class="dates">2026</span></div>
+  </div>
+
+  <p class="project"><b>Everlasting Hills Church Platform: Full-stack church management system</b> (Next.js 14 PWA + NestJS/Prisma API)</p>
+  <ul>
+    <li>Designed and built a production church management platform on my own in five months: a Next.js 14 PWA and a NestJS/Prisma REST API with 583 endpoints and a 129-model PostgreSQL schema, shipped across 510 commits.</li>
+    <li>Covered 40+ feature areas across church life, including membership, attendance, home cells, visitor follow-up, events, courses, reading plans, online giving and reporting.</li>
+    <li>Built a multi-tenant data model with 9 levels of department-based access, so every leader and member only sees what they should, plus full audit logging.</li>
+    <li>Secured sign-in with Supabase authentication, login tokens kept in secure server-side cookies, and account-aware rate limiting.</li>
+    <li>Built background workflows with BullMQ/Redis job queues and 11 scheduled jobs that run follow-ups, reminders, notifications and automated email campaigns.</li>
+    <li>Added online giving with Paystack and used Google Gemini AI to turn YouTube sermons into written summaries.</li>
+    <li>Delivered an offline-capable PWA with offline sermon playback, push notifications and a built-in CMS for the public website.</li>
+    <li>Integrated Resend, Cloudflare R2, Google Calendar, Telegram and Sentry for email, file storage, scheduling and error monitoring.</li>
+    <li>Set up CI quality checks (186 test files, type checks, an OpenAPI check that keeps the app and API in sync, and a guarded database migration workflow), deployed to Google Cloud Run.</li>
+  </ul>
+
+  <p class="project"><b>Vaultly: Naira-only fintech mobile app</b> (React Native/Expo + Next.js admin panel)</p>
+  <ul>
+    <li>Built the onboarding and identity verification flow for a Nigerian fintech app in React Native/Expo, integrating the Dojah KYC SDK (native module) for real-time identity checks.</li>
+    <li>Integrated Anchor banking-as-a-service (BaaS) APIs to power bank-to-bank and in-app transfers, deposits, and savings/wallet features.</li>
+    <li>Built transfer flows with real-time balance updates, transaction status handling and transaction history, plus savings features that let users fund and track goals.</li>
+    <li>Moved the project from Expo Go to an EAS development build to support native modules, keeping local Android builds running so testing was never blocked.</li>
+  </ul>
+</div>
+
+<div class="keep">
+  <h2>Skills</h2>
+  <div class="skills">
+    <p><b>Frontend:</b> React JS, Next.js, Vue.js, Angular, TypeScript, JavaScript, HTML, CSS3, Sass, Bootstrap, Tailwind, jQuery, React Query, Redux Toolkit, RTK Query</p>
+    <p><b>Backend:</b> Node.js, NestJS, Python, REST API design, Prisma, PostgreSQL, Redis, BullMQ, JWT/Supabase Auth, role-based access control (RBAC)</p>
+    <p><b>Mobile:</b> React Native, Expo, EAS, Dojah KYC SDK, Anchor (BaaS) integration</p>
+    <p><b>Testing:</b> Jest, Vitest; unit, integration, component, end-to-end, API, contract, regression, performance and accessibility testing</p>
+    <p><b>AI-Assisted Development:</b> GitHub Copilot, Claude, Cursor for rapid prototyping, with code review and hardening before production</p>
+    <p><b>Tools &amp; Practices:</b> Git &amp; GitHub, CI/CD, Docker, Google Cloud Run, Sentry</p>
+  </div>
+</div>
+
+<div class="keep">
+  <h2>Soft Skills</h2>
+  <p class="block">Result oriented, Problem-Solving Skills, Willingness to Learn</p>
+</div>
+
+<div class="keep">
+  <h2>Education</h2>
+  <p class="block">University Of Ibadan, Ibadan Nigeria: Bachelor's Degree in Civil Engineering</p>
+</div>
+
+<div class="keep">
+  <h2>Certifications</h2>
+  <ul class="plain">
+    <li>DUFUNA CODE-CAMP</li>
+    <li>ALT SCHOOL Africa</li>
+    <li>Code Evolution</li>
+  </ul>
+</div>
+
+</body>
+</html>
