@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Jane",
+    "company": "Acme AI",
+    "role": "Senior Full-Stack Engineer",
+    "detail": "building agent tooling for logistics",
+    "channel": "linkedin"
+  },
+  {
+    "name": "Sam",
+    "company": "Northstar",
+    "role": "Founding Engineer",
+    "detail": "an early-stage fintech hiring its first engineers",
+    "email": "sam@example.com",
+    "channel": "email"
+  }
+]
