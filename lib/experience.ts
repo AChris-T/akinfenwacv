@@ -49,7 +49,7 @@ export const roles: Role[] = [
     summary:
       "Designed, built and run a complete church management platform on my own: an installable web app that works offline, backed by a secure API that powers every ministry team.",
     highlights: [
-      "Built the whole platform solo in five months: a Next.js web app and a NestJS backend with 583 API endpoints, 129 database models and 510 commits.",
+      "Built the whole platform solo in five months: a Next.js web app and a NestJS backend with API endpoints, database models",
       "Covered the full life of the church in 40+ feature areas, including membership, attendance, home cells, visitor follow-up, events, courses, reading plans, giving and reports.",
       "Designed one system that serves every department safely, with 9 levels of access so each leader and member only sees what they should, and a full audit log of who changed what.",
       "Kept sign-in secure by holding login tokens in protected server-side cookies instead of the browser, with rate limiting to block abuse.",
